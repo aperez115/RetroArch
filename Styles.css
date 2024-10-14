@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif; /* sets the font and its font backups for browser support */
+    line-height: 1.5; /* line spacing */
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+li, a {
+    text-decoration: none; /* gets rid of underline */
+}
+
+
+/*-------- Header Section --------------------------------------------------------*/
+header {
+    display: flex; /* aligns items next to each other in flex-box format */
+    justify-content: flex-end; /* sets items to the right/end side */
+    background-color: #3A1078; /* sets the background color of the header */
+    margin-bottom: 3%; /* provides spacing below header */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* sets the logo to the left side */
+}
+
+/* makes logo a link to home page */
+.logo a {
+    color: white; /* sets the color of the link to white */
+}
+
+.logo img {
+    margin-right: -30px; /* makes img closer to site title */
+    margin-left: -30px;
+}
+
+.logo h1 {
+    font-style: italic;
+    font-size: 35px;
+}
+
+.nav-links li {
+    list-style: none; /* gets rid of underline */
+    display: inline-block; /* lines up items horizontally next to each other */
+    padding: 0px 20px; /* spcaes out items */
+    font-size: 25px;
+}
+
+.nav-links ul li a {
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease 0s; /* delays the color transition when hovering */
+}
+
+.nav-links ul li a:hover {
+    background-color: #3795BD;
+    border-radius: 30px;
+}
