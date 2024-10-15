@@ -9,11 +9,15 @@ html {
 
 body {
     color: white;
-    background-color: black;
+    background-color: #181C2A; /* makes the bg a different color */
+    background-image: url('images/ps\ symbols\ bg\ with\ opacity.png'); /* adds bg image over the bg color. Works well with the opacity on the img */
+    background-attachment: fixed; /* keeps bg still when scrolling */
+    background-size: cover; /* resizes the bg image to cover the whole site */
+    background-repeat: repeat; /* makes the bg image repeat */
 }
 
 li, a {
-    text-decoration: none; /* gets rid of underline */
+    color: white;
 }
 
 
@@ -33,33 +37,39 @@ header {
 
 /* makes logo a link to home page */
 .logo a {
-    color: white; /* sets the color of the link to white */
+    color: white; /* sets the color of the title link to white */
 }
 
 .logo img {
     margin-right: -30px; /* makes img closer to site title */
-    margin-left: -30px;
+    margin-left: -30px; /* makes img closer to left side of the header */
 }
 
 .logo h1 {
     font-style: italic;
     font-size: 35px;
+    text-shadow: 0 0 10px #3795BD, 0 0 20px #3795BD, 0 0 30px #3795BD; /* adds a glowing shadow effect to h1 in the logo class */
+}
+
+.logo a {
+    text-decoration: none; /* gets rid of underline */
 }
 
 .nav-links li {
     list-style: none; /* gets rid of underline */
     display: inline-block; /* lines up items horizontally next to each other */
     padding: 0px 20px; /* spcaes out items */
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .nav-links ul li a {
     color: white;
     font-weight: bold;
     transition: all 0.3s ease 0s; /* delays the color transition when hovering */
+    padding: 1rem; /* better spacing between each link */
 }
 
 .nav-links ul li a:hover {
-    background-color: #3795BD;
-    border-radius: 30px;
+    background-color: #3795BD; /* makes hover bg color blueish */
+    border-radius: 25px; /* rounded corners */
 }
