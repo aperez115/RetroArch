@@ -10,7 +10,7 @@ html {
 body {
     color: white;
     background-color: #181C2A; /* makes the bg a different color */
-    background-image: url('images/ps\ symbols\ bg\ with\ opacity.png'); /* adds bg image over the bg color. Works well with the opacity on the img */
+    background-image: url('images/ps-bg-with-opacity.png'); /* adds bg image over the bg color. Works well with the opacity on the img */
     background-attachment: fixed; /* keeps bg still when scrolling */
     background-size: cover; /* resizes the bg image to cover the whole site */
     background-repeat: repeat; /* makes the bg image repeat */
