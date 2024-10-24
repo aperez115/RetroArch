@@ -139,8 +139,8 @@ main h2 {
     float: left;
     border-radius: 20px;
     margin-right: 15px;
-    margin-bottom: 15px;
-    margin-top: 25px;
+    margin-bottom: 15px; /* spacing below text */
+    margin-top: 25px; /* lines up with text */
 }
 
 .float-right { /* places image to the right */
@@ -202,6 +202,8 @@ main h2 {
     border: none;
 }
 
+
+/*---------------- Form ---------------------*/
 .poll-box form fieldset {
     background-color: #131577; /* changes the background color of the poll fieldset */
 }
