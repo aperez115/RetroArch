@@ -2,20 +2,20 @@
 <html lang="en">
   <head>
     <title>Retro Arch - Sony's PlayStation History</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
     <link rel="stylesheet" href="Styles.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6RDV38GB0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Q6RDV38GB0');
+  </script>
   </head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6RDV38GB0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Q6RDV38GB0');
-</script>
-
+  
   <body>
     <header>
       <div class="logo">
@@ -24,8 +24,8 @@
       </div>
       <nav class="nav-links">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="console.html">Console</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="console.html">Consoles</a></li>
           <li><a href="accessories.html">Accessories</a></li>
           <li><a href="bestGames.html">Best Games</a></li>
           <li><a href="form.html">Form</a></li>
@@ -34,9 +34,9 @@
     </header>
 
     <main> <!--Center all Content-->
-        <div> <!--title area-->
-            <img src="images/playstation-all-consoles-1715963851773.png" alt="PlayStations consoles" width="452" height="209">
-            <h1>SONY'S PLAYSTATION HISTORY</h1>
+        <div class="title-with-img"> <!--title area-->
+            <img src="images/playstation-all-consoles-1715963851773.png" alt="PlayStations consoles" width="700" height="400">
+            <h1 class="centered">SONY'S PLAYSTATION HISTORY</h1>
         </div>
         <div> <!--content area-->
             <p>
@@ -52,13 +52,13 @@
                 fan or new to the PlayStation consoles, there will always be something for everyone here! As PlayStation slogan 
                 says, <em>“Play Has No Limits”</em>.
             </p>
+            <br>
             <h2>Watch PlayStation 5 Pro Console: Reveal Trailer</h2>
 
-            <div> <!-- Embedded YouTube video, Add CSS later on to replace this iframe -->
+            <div class="video"> <!-- Embedded YouTube video, Add CSS later on to replace this iframe -->
                 <iframe width="560" height="315" 
                     src="https://www.youtube.com/embed/cxXvYJyBlc4?si=SB2fqcm4pcVNs4gC" 
                     title="YouTube video player" 
-                    frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     referrerpolicy="strict-origin-when-cross-origin" 
                     allowfullscreen>

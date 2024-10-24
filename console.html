@@ -2,19 +2,19 @@
 <html lang="en">
   <head>
     <title>Retro Arch - Sony's PlayStation History</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
     <link rel="stylesheet" href="Styles.css">
-  </head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6RDV38GB0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6RDV38GB0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-Q6RDV38GB0');
-</script>
+      gtag('config', 'G-Q6RDV38GB0');
+  </script>
+  </head>
 
   <body>
     <header>
@@ -25,7 +25,7 @@
       <nav class="nav-links">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="console.html">Console</a></li>
+          <li><a class="active" href="console.html">Consoles</a></li>
           <li><a href="accessories.html">Accessories</a></li>
           <li><a href="bestGames.html">Best Games</a></li>
           <li><a href="form.html">Form</a></li>
@@ -34,11 +34,11 @@
     </header>
 
     <main> <!--Center All Content-->
-      <div> <!--Page Title-->
-        <h1>Journey of the Consoles</h1>
+      <div class="title-without-img"> <!--Page Title-->
+        <h1>Journey <br>of <br>the <br>Consoles</h1>
       </div>
-      <h1>Journey of the PlayStations</h1>
       <div class="toc"> <!--Table of Contents-->
+        <h2>Table Of Contents:</h2>
         <ul>
           <li><h2><a href="#ps1">PS1</a></h2></li>
           <li><h2><a href="#ps2">PS2</a></h2></li>
@@ -47,10 +47,12 @@
           <li><h2><a href="#ps5">PS5</a></h2></li>
         </ul>
       </div>
+      
+      <br>
 
       <section id="ps1"> <!--PS1 content-->
         <h2>PlayStation 1; Where It All Began</h2>
-        <img src="images/sony_playstation_PNG17542.png" alt="PS1" width="416" height="188">
+        <img class="img-center" src="images/sony_playstation_PNG17542.png" alt="PS1" width="574" height="314">
         <p>
           The original PS1 first released on December 3rd, 1994, in Japan and worldwide on September 9th, 1995, and had been Sony's 
           first entry point into the gaming industry, but did you know that PlayStation console came to be because of Nintendo 
@@ -70,14 +72,16 @@
           opened new possibilities for cinematic storytelling in games. 
         </p>
         <!--Add CSS for Text-Wrap and Round Edges-->
-        <img src="images/metal-gear-solid-1660604991900.jpg" alt="metalGear" width="222" height="219">
-        <p>
-          Some of the most popular games that took advantage of these technological innovations were games like Final Fantasy VII, 
-          a game that redefined the Role-Playing genre (RPG) thanks to its deep narrative and use of FMV cutscenes; Metal Gear Solid, 
-          which introduced players to stealth-based gameplay and intricate storytelling; and Gran Turismo, a racing game known 
-          for its realism and attention to detail. There are other notable titles that helped this console, which you can find 
-          more about on our “Best Games” page.
-        </p>
+        <div class="text-wrap-container">
+          <img class="float-right" src="images/metal-gear-solid-1660604991900.jpg" alt="metalGear" width="270" height="267">
+          <p>
+            Some of the most popular games that took advantage of these technological innovations were games like Final Fantasy VII, 
+            a game that redefined the Role-Playing genre (RPG) thanks to its deep narrative and use of FMV cutscenes; Metal Gear Solid, 
+            which introduced players to stealth-based gameplay and intricate storytelling; and Gran Turismo, a racing game known 
+            for its realism and attention to detail. There are other notable titles that helped this console, which you can find 
+            more about on our “Best Games” page.
+          </p>
+        </div>
         <p>
           With the combination of technological leaps in hardware, immersive and groundbreaking graphics, and a phenomenal 
           line up of games, the PlayStation 1 changed and shaped the whole gaming industry into a better landscape, laying 
@@ -87,7 +91,7 @@
 
       <section id="ps2"> <!--PS2 Content-->
         <h2>PlayStation 2; The Pinnacle of Consoles</h2>
-        <img src="images/ps2.png" alt="PS2" width="467" height="312">
+        <img class="img-center" src="images/ps2.png" alt="PS2" width="567" height="412">
         <p>
           With the huge success of the PlayStation 1, it only makes sense that Sony would continue the PlayStation line-up, 
           and oh boy did they do just that. In 2000, Sony launched their very next game console, the PS2. By this time, Sony 
@@ -112,21 +116,23 @@
           continue playing their old library of games, giving it a nice appeal to players.
         </p>
         <!--Add CSS for Text-Wrap and Round Edges-->
-        <img src="images/sanAndreas.jpg" alt="gta" width="250" height="131">
-        <p>
-          The PS2 is the Best-Selling console to ever be made in the gaming industry, with 155 million units sold, 
-          going outside of just the PlayStation and towering over other game companies like Nintendo's consoles and Xbox's. 
-          It had a plethora of games to choose from, such as Grand Theft Auto: San Andreas, which offered a massive open world 
-          and a complex storyline; Final Fantasy X, known for its immersive story and graphical leap; and 
-          Metal Gear Solid 2: Sons of Liberty, which pushed the boundaries of interactive storytelling and cinematic gameplay. 
-          Gran Turismo 3, God of War, and Shadow of the Colossus were also standout titles that showcased the console's power 
-          and ability to deliver unforgettable gaming experiences.
-        </p>
+        <div class="text-wrap-container">
+          <img class="float-left" src="images/sanAndreas.jpg" alt="gta" width="450" height="231">
+          <p>
+            The PS2 is the Best-Selling console to ever be made in the gaming industry, with 155 million units sold, 
+            going outside of just the PlayStation and towering over other game companies like Nintendo's consoles and Xbox's. 
+            It had a plethora of games to choose from, such as Grand Theft Auto: San Andreas, which offered a massive open world 
+            and a complex storyline; Final Fantasy X, known for its immersive story and graphical leap; and 
+            Metal Gear Solid 2: Sons of Liberty, which pushed the boundaries of interactive storytelling and cinematic gameplay. 
+            Gran Turismo 3, God of War, and Shadow of the Colossus were also standout titles that showcased the console's power 
+            and ability to deliver unforgettable gaming experiences.
+          </p>
+        </div>
       </section>
 
       <section id="ps3"> <!--PS3 Content-->
         <h2>PlayStation 3; A Disasterous Launch</h2>
-        <img src="images/ps3.png" alt="PS3" width="377" height="215">
+        <img class="img-center" src="images/ps3.png" alt="PS3" width="477" height="315">
         <p>
           On November 11th, 2006, the PlayStation 3 had released in Japan, then worldwide on November 17th of the same year. 
           This was the most controversial release of Sony's gaming consoles, as many had seen it to be overpriced for the time 
@@ -155,15 +161,17 @@
           complexity of the Cell processor made it difficult for developers to unlock the console's full potential early on. 
         </p>
         <!--Add CSS for Text-Wrap and Round Edges-->
-        <img src="images/theLastOfUs.jpg" alt="Last Of US" width="290" height="160">
-        <p>
-          Even with all the PS3's struggles, it still had some of the best and most loved games during its time, 
-          such as Uncharted 2: Among Thieves and Uncharted 3: Drake's Deception, which stood out for their rich 
-          storytelling and immersive visuals. The Last of Us, which is one of the most iconic games of its generation, 
-          even still being talked about today, especially with the release of the show in 2023, reaching even wider 
-          audiences. Other standout titles included Metal Gear Solid 4: Guns of the Patriots, which was praised for 
-          its deep narrative, God of War III with its massive scale and intense action, and Gran Turismo 5
-        </p>
+        <div class="text-wrap-container">
+          <img class="float-right" src="images/theLastOfUs.jpg" alt="Last Of US" width="420" height="260">
+          <p>
+            Even with all the PS3's struggles, it still had some of the best and most loved games during its time, 
+            such as Uncharted 2: Among Thieves and Uncharted 3: Drake's Deception, which stood out for their rich 
+            storytelling and immersive visuals. The Last of Us, which is one of the most iconic games of its generation, 
+            even still being talked about today, especially with the release of the show in 2023, reaching even wider 
+            audiences. Other standout titles included Metal Gear Solid 4: Guns of the Patriots, which was praised for 
+            its deep narrative, God of War III with its massive scale and intense action, and Gran Turismo 5
+          </p>
+        </div>
         <p>
           The PlayStation 3's journey was one of redemption. Initially criticized for its high price, complex architecture, 
           and lack of compelling exclusives, the PS3 overcame its early controversies through perseverance, a rich library 
@@ -175,7 +183,7 @@
 
       <section id="ps4"> <!--PS4 Content-->
         <h2>PlayStation 4; Sony's Redemption</h2>
-        <img src="images/ps4.png" alt="PS4" width="353" height="293">
+        <img class="img-center" src="images/ps4.png" alt="PS4" width="453" height="393">
         <p>
           In November of 2013, the PlayStation 4 was launched in North America. After the major setbacks caused by the 
           hardware of the PS3, Sony designed the PS4 to better focus on simplicity, power, and affordability. 
@@ -204,15 +212,16 @@
           <li><em><strong>Spider-Man (2018)</strong></em> captured the feeling of superhero action with fluid web-swinging mechanics and a well-crafted story.</li>
         </ul>
         <!--CSS Center image-->
-        <img src="images/marvel'sSpider-Man.jpg" alt="Spider-Man" width="474" height="266">
+        <img class="img-center" src="images/marvel'sSpider-Man.jpg" alt="Spider-Man" width="474" height="266">
         <p>
           With the success of the PS4, it helped to cement Sony's position back in the gaming industry.
         </p>
+        <br>
       </section>
 
       <section id="ps5">
         <h2>PlayStation 5; Graphics PowerHouse</h2>
-        <img src="images/ps5.png" alt="PS5" width="486" height="335">
+        <img class="img-center" src="images/ps5.png" alt="PS5" width="586" height="435">
         <p>
           In November of 2020, the PS5 launched globally at a price of $499, making it the current console of this generation 
           (as of 2024). The PS5 is the most technologically advanced PlayStation console to date. In its marketing campaign, 
@@ -235,11 +244,13 @@
           however, most games on the PS5 don't optimize for that framerate, usually only going up to 60 frames per second. 
         </p>
         <!--Add CSS for Text-Wrap and Round Edges-->
-        <img src="images/dualsenseController.jpg" alt="Dualsense controller" width="273" height="181">
-        <p>
-          With the inclusion of the new DualSense controller, it became one of the most remarkable features of the PS5. 
-          Having the controller come with haptic feedback and adaptive triggers gave a more immersive experience in video games.
-        </p>
+        <div class="text-wrap-container">
+          <img class="float-left" src="images/dualsenseController.jpg" alt="Dualsense controller" width="320" height="199">
+          <p>
+            With the inclusion of the new DualSense controller, it became one of the most remarkable features of the PS5. 
+            Having the controller come with haptic feedback and adaptive triggers gave a more immersive experience in video games.
+          </p>
+        </div>
       </section>
     </main>
 

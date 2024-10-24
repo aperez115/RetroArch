@@ -5,6 +5,8 @@
 html {
     font-family: 'Times New Roman', Times, serif; /* sets the font and its font backups for browser support */
     line-height: 1.5; /* line spacing */
+    font-size: 21px; /* increases the font size from default throughout the whole html */
+    scroll-behavior: smooth; /* makes jumping to links a smooth scrool and not in an instant */
 }
 
 body {
@@ -13,20 +15,25 @@ body {
     background-image: url('images/ps-bg-with-opacity.png'); /* adds bg image over the bg color. Works well with the opacity on the img */
     background-attachment: fixed; /* keeps bg still when scrolling */
     background-size: cover; /* resizes the bg image to cover the whole site */
-    background-repeat: repeat; /* makes the bg image repeat */
+    background-repeat: no-repeat; /* makes the bg image not repeat */
 }
 
 li, a {
     color: white;
 }
 
+footer {
+    text-align: center;
+    background-color: #3A1078;
+    margin-top: -26.5px; /* makes footer connect with the bottom of Main */
+}
 
-/*-------- Header Section --------------------------------------------------------*/
+
+/*--------------------------- Header Section -----------------------------------*/
 header {
     display: flex; /* aligns items next to each other in flex-box format */
     justify-content: flex-end; /* sets items to the right/end side */
     background-color: #3A1078; /* sets the background color of the header */
-    margin-bottom: 3%; /* provides spacing below header */
 }
 
 .logo {
@@ -60,6 +67,11 @@ header {
     display: inline-block; /* lines up items horizontally next to each other */
     padding: 0px 20px; /* spcaes out items */
     font-size: 22px;
+    border-right: 1px solid white; /* shows right border to see separation better */
+}
+
+.nav-links li:last-child {
+    border-right: none; /* gets rid of right border for the last item in the list */
 }
 
 .nav-links ul li a {
@@ -67,9 +79,129 @@ header {
     font-weight: bold;
     transition: all 0.3s ease 0s; /* delays the color transition when hovering */
     padding: 1rem; /* better spacing between each link */
+    text-align: center;
 }
 
-.nav-links ul li a:hover {
-    background-color: #3795BD; /* makes hover bg color blueish */
+.nav-links ul li a:hover:not(.active) { /* only does this when you hover over the non-current pages */
+    background-color: #1f024a; /* makes hover bg color blueish */
     border-radius: 25px; /* rounded corners */
+}
+
+.active {
+    background-color: #3795BD; /* changes the bg color of the current page in the navigation bar */
+    border-radius: 25px;
+}
+
+
+/*----------------------------- Main Section -------------------------------- */
+main {
+    max-width: 1100px; /* Set the maximum width of the main content */
+    margin: 0 auto;    /* Center Main horizontally */
+    padding: 20px;     /* Optional: add padding for spacing */
+    background-color: #181C2A;
+    border-style: groove; /* shows side borders */
+    border-top-style: hidden; /* hides the top of the border */
+    border-bottom-style: hidden; /* hides the bottom of the border */
+}
+
+main h2 {
+    text-decoration: underline; /* adds underline to all h2 headings */
+}
+
+/*----------table of contents----------*/
+.toc ul {
+    margin-left: 10px; /* aligns the the entire list more to the right */
+}
+
+.toc ul li, a {
+    color: #3795BD;
+}
+
+.toc a:hover {
+    color:#6caeca /* makes text lighter when hovering over */
+}
+
+#ps1, #ps2, #ps3, #ps4, #ps5, #eyetoy, #psvr, #pscam, #ff7, #gta, #lou, #msp, #gow {
+    scroll-margin-top: 30px; /* gives spacing when jumping to that section from anchor links */
+}
+
+.center-heading{ /* will change the alignment of h2 on best games page */
+    text-align: center;
+}
+
+
+/*--------------images-----------------*/
+.text-wrap-container {
+    overflow: hidden; /* makes sure that the image does not overlap onto the next paragraph */
+}
+
+.float-left { /* places image to the left */
+    float: left;
+    border-radius: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.float-right { /* places image to the right */
+    float: right;
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.img-center { /* places image in the center */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+    border-radius: 20px;
+}
+
+
+/*------------ title areas -------------*/
+.title-with-img {
+    position: relative;
+    text-align: center;
+    color: white;
+    border-bottom: 3px solid gray;
+}
+.title-with-img img {
+    filter: blur(1.5px); /* blurs the image */
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title-without-img {
+    text-align: center;
+    border-bottom: 3px solid gray;
+    font-size: larger;
+}
+
+/*------------- Video --------------------*/
+.video {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.video iframe { /* makes the iframe responsive */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.poll-box form fieldset {
+    background-color: #131577; /* changes the background color of the poll fieldset */
 }

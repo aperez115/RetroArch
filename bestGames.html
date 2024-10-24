@@ -2,19 +2,19 @@
 <html lang="en">
   <head>
     <title>Retro Arch - Sony's PlayStation History</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
     <link rel="stylesheet" href="Styles.css">
-  </head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6RDV38GB0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6RDV38GB0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-Q6RDV38GB0');
-</script>
+      gtag('config', 'G-Q6RDV38GB0');
+  </script>
+  </head>
 
   <body>
     <header>
@@ -25,19 +25,20 @@
       <nav class="nav-links">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="console.html">Console</a></li>
+          <li><a href="console.html">Consoles</a></li>
           <li><a href="accessories.html">Accessories</a></li>
-          <li><a href="bestGames.html">Best Games</a></li>
+          <li><a class="active" href="bestGames.html">Best Games</a></li>
           <li><a href="form.html">Form</a></li>
         </ul>
       </nav>
     </header>
 
     <main> <!--Center all Content-->
-      <div> <!--Page Title-->
+      <div class="title-without-img"> <!--Page Title-->
         <h1>Best Games</h1>
       </div>
       <div class="toc"> <!--Table of Contents-->
+        <h2>Table Of Contents:</h2>
         <ul>
           <li><h2><a href="#ff7">Final Fantasy VII</a></h2></li>
           <li><h2><a href="#gta">GTA: San Andreas</a></h2></li>
@@ -50,25 +51,27 @@
       <br>
 
       <section id="ff7"> <!--FF7 Content-->
-        <h2>PS1</h2>
+        <h2 class="center-heading">PS1</h2>
         <br>
 
         <h2>Final Fantasy VII</h2>
         <!--Add CSS Text Wrap and Round Edged-->
-        <img src="images/1935_final-fantasy-vii-prev.png" alt="FFVII" width="297" height="127">
-        <p>
-          First released on the PS1 in 1997, it is one of the most influential and iconic JRPGS of all time in gaming history. 
-          It was the first game in its series to feature 3D graphics, cutscenes, and use of pre-rendered backgrounds. The 
-          compelling story, along with its immersive gameplay for its era helped to define it as one of the best the PS1 
-          had to offer.
-        </p>
-        <p>
-          Set in a dystopian world, <em>Final Fantasy VII</em> follows Cloud Strife, a former soldier-turned-mercenary who joins a 
-          rebel group called AVALANCHE to fight against the Shinra Corporation, a company exploiting the planet's 
-          resources for profit. As the story unfolds, Cloud and his companions face a greater threat in Sephiroth, a 
-          powerful and enigmatic antagonist with plans to destroy the world. The game's narrative explores deep themes 
-          like identity, environmentalism, and loss, making it resonate with players on an emotional level.
-        </p>
+        <div class="text-wrap-container">
+          <img class="float-left" src="images/1935_final-fantasy-vii-prev.png" alt="FFVII" width="397" height="200">
+          <p>
+            First released on the PS1 in 1997, it is one of the most influential and iconic JRPGS of all time in gaming history. 
+            It was the first game in its series to feature 3D graphics, cutscenes, and use of pre-rendered backgrounds. The 
+            compelling story, along with its immersive gameplay for its era helped to define it as one of the best the PS1 
+            had to offer.
+          </p>
+          <p>
+            Set in a dystopian world, <em>Final Fantasy VII</em> follows Cloud Strife, a former soldier-turned-mercenary who joins a 
+            rebel group called AVALANCHE to fight against the Shinra Corporation, a company exploiting the planet's 
+            resources for profit. As the story unfolds, Cloud and his companions face a greater threat in Sephiroth, a 
+            powerful and enigmatic antagonist with plans to destroy the world. The game's narrative explores deep themes 
+            like identity, environmentalism, and loss, making it resonate with players on an emotional level.
+          </p>
+        </div>
         <p>
           The gameplay had involved turn-based combat, with a magic Materia system that let players customize their team's 
           ability set and forced players to better strategize for tough battles. The game featured a vast open world, the 
@@ -80,74 +83,80 @@
       <br>
 
       <section id="gta"> <!--GTA Content-->
-        <h2>PS2</h2>
+        <h2 class="center-heading">PS2</h2>
         <br>
 
         <h2>GTA: San Andreas</h2>
         <!--Add CSS Text wrap and Round Edges-->
-        <img src="images/gtPpng.png" alt="GTA" width="222" height="221">
-        <p>
-          <em>Grand Theft Auto: San Andreas</em> was released on the PS2 back in 2004, and quickly became one of the most critically 
-          acclaimed games on its console. It is based on the fictional state of San Andreas. The game is a open-world, 
-          action game, with plenty of diverse locations to explore.
-        </p>
-        <p>
-          As the main character, CJ, the players are set to explore the narrative of gang warfare, betrayal, and corruption 
-          in the game's story. The game is filled with open-world activities for the players to engage in, such as street 
-          racing, gambling, and customizing cars.
-        </p>
-        <p>
-          Thanks to its massive open-world, San Andreas easily became a big hit on the PS2 and sold well over 27.5 million 
-          copies worldwide.
-        </p>
-
+        <div class="text-wrap-container">
+          <img class="float-right" src="images/gtPpng.png" alt="GTA" width="422" height="400">
+          <p>
+            <em>Grand Theft Auto: San Andreas</em> was released on the PS2 back in 2004, and quickly became one of the most critically 
+            acclaimed games on its console. It is based on the fictional state of San Andreas. The game is a open-world, 
+            action game, with plenty of diverse locations to explore.
+          </p>
+          <p>
+            As the main character, CJ, the players are set to explore the narrative of gang warfare, betrayal, and corruption 
+            in the game's story. The game is filled with open-world activities for the players to engage in, such as street 
+            racing, gambling, and customizing cars.
+          </p>
+        
+          <p>
+            Thanks to its massive open-world, San Andreas easily became a big hit on the PS2 and sold well over 27.5 million 
+            copies worldwide.
+          </p>
+        </div>
       </section>
 
       <br>
 
       <section id="lou">
-        <h2>PS3</h2>
+        <h2 class="center-heading">PS3</h2>
         <br>
 
         <h2>The Last of Us</h2>
         <!--Add CSS Center Image and Round Edged-->
-        <img src="images/lastOfUs.jpg" alt="Last of Us" width="387" height="217">
-        <p>
-          Released back in 2013, this highly acclaimed action-narrative game, developed by Naughty Dog, made its way as 
-          one of the best single-player story games of all time. Set in a post-apocalyptic zombie world, the game follows 
-          the protagonist, Joel Miller, an old, hardened smuggler, and a young girl, Ellie, in which holds the key to 
-          humanity's survival in this world. The game's immersive narrative and environments helped to define the game as 
-          one of the best the PS3 had to offer.
-        </p>
-        <p>
-          Gameplay involves the use of stealth, fist and gun combat, and exploration, as players need to wisely make use of 
-          their limited supplies, as ammo and other materials are hard to come by in this ravaged world. The game heavily 
-          emphasizes you to manage your resources carefully and to make plans on how to approach a deadly situation in the game. 
-          Do you choose to go out guns blazing, risking all your limited ammo, or do you choose to stealthily approach enemies, 
-          saving what limited resources you have. This game's emotional storytelling and immersive environments paved new 
-          standards for narrative-driven games.
-        </p>
+        <div class="text-wrap-container">
+          <img class="float-left" src="images/lastOfUs.jpg" alt="Last of Us" width="500" height="320">
+          <p>
+            Released back in 2013, this highly acclaimed action-narrative game, developed by Naughty Dog, made its way as 
+            one of the best single-player story games of all time. Set in a post-apocalyptic zombie world, the game follows 
+            the protagonist, Joel Miller, an old, hardened smuggler, and a young girl, Ellie, in which holds the key to 
+            humanity's survival in this world. The game's immersive narrative and environments helped to define the game as 
+            one of the best the PS3 had to offer.
+          </p>
+          <p>
+            Gameplay involves the use of stealth, fist and gun combat, and exploration, as players need to wisely make use of 
+            their limited supplies, as ammo and other materials are hard to come by in this ravaged world. The game heavily 
+            emphasizes you to manage your resources carefully and to make plans on how to approach a deadly situation in the game. 
+            Do you choose to go out guns blazing, risking all your limited ammo, or do you choose to stealthily approach enemies, 
+            saving what limited resources you have. This game's emotional storytelling and immersive environments paved new 
+            standards for narrative-driven games.
+          </p>
+        </div>
       </section>
 
       <br>
 
       <section id="msp">
-        <h2>PS4</h2>
+        <h2 class="center-heading">PS4</h2>
         <br>
 
         <h2>Marvel's Spider-Man</h2>
         <!--Add CSS Text Wrap and Round Edges-->
-        <img src="images/spider-man.jpg" alt="Spider-Man" width="288" height="163">
-        <p>
-          Released in 2018 for the PS4, this became one of the most hyped and anticipated games of the PS4 era. The 
-          game shows the adventures and Peter Parker, and his life struggles of being Spider-Man, as he as to balance 
-          his personal and superhero life. This game offers a massive open world of New York City, allowing you to swing 
-          through the streets of the city and fight off crime
-        </p>
-        <p>
-          The narrative of the game explores Peter's struggles and introduces a fresh new take on Spider-Man, starting off 
-          with an already experienced Spider-Man who has been fighting off crime for 8 years.
-        </p>
+        <div class="text-wrap-container">
+          <img class="float-right" src="images/spider-man.jpg" alt="Spider-Man" width="500" height="300">
+          <p>
+            Released in 2018 for the PS4, this became one of the most hyped and anticipated games of the PS4 era. The 
+            game shows the adventures and Peter Parker, and his life struggles of being Spider-Man, as he as to balance 
+            his personal and superhero life. This game offers a massive open world of New York City, allowing you to swing 
+            through the streets of the city and fight off crime
+          </p>
+          <p>
+            The narrative of the game explores Peter's struggles and introduces a fresh new take on Spider-Man, starting off 
+            with an already experienced Spider-Man who has been fighting off crime for 8 years.
+          </p>
+        </div>
         <p>
           The gameplay involves fast-paced combat, exploration, and most importantly, fast web-swinging traversal. Use gadgets 
           to help in battles and engage in plenty of side-missions to attain collectibles. The game also offers customizable outfits, 
@@ -162,23 +171,25 @@
       <br>
 
       <section id="gow">
-        <h2>PS5</h2>
+        <h2 class="center-heading">PS5</h2>
         <br>
 
         <h2>God of War: Ragnarok</h2>
         <!--Add CSS image in Center and Round Edges-->
-        <img src="images/God-of-War-RagnarokHD-scaled.jpg" alt="God Of War: Ragnarok" width="404" height="238">
-        <p>
-          Released in 2022, this highly acclaimed sequel gained many fans and recognition for its story-driven action. 
-          Developed by Santa Monica Studio, the game continues the story of Kratos, the former Greek god, and his son Atreus, 
-          as they navigate the tumultuous world of Norse mythology. Set against the backdrop of the impending apocalypse known 
-          as Ragnarök, the game delivers an epic narrative filled with intense combat, complex characters, and a richly detailed world.
-        </p>
-        <p>
-          The graphics of the game showcase the power of the PS5, showing off highly detailed character models, 
-          beautiful environments, and dynamic lighting that helps to bring the world to life. There is great voice acting 
-          and cinematic presentation, helping to create an immersive world for the player to enjoy.
-        </p>
+        <div class="text-wrap-container">
+          <img class="float-left" src="images/God-of-War-RagnarokHD-scaled.jpg" alt="God Of War: Ragnarok" width="505" height="300">
+          <p>
+            Released in 2022, this highly acclaimed sequel gained many fans and recognition for its story-driven action. 
+            Developed by Santa Monica Studio, the game continues the story of Kratos, the former Greek god, and his son Atreus, 
+            as they navigate the tumultuous world of Norse mythology. Set against the backdrop of the impending apocalypse known 
+            as Ragnarök, the game delivers an epic narrative filled with intense combat, complex characters, and a richly detailed world.
+          </p>
+          <p>
+            The graphics of the game showcase the power of the PS5, showing off highly detailed character models, 
+            beautiful environments, and dynamic lighting that helps to bring the world to life. There is great voice acting 
+            and cinematic presentation, helping to create an immersive world for the player to enjoy.
+          </p>
+        </div>
         <p>
           God of War Ragnarök received widespread acclaim for its compelling story, refined gameplay, and visual splendor. 
           It became a major success for the PS5, selling millions of copies and earning numerous awards for its excellence 
