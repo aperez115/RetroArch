@@ -157,6 +157,8 @@ main h2 {
     margin-right: auto;
     margin-bottom: 70px;
     border-radius: 20px;
+    width: 60%; /* responsive image */
+    height: 60%; /* responsive image */
 }
 
 
@@ -166,9 +168,13 @@ main h2 {
     text-align: center;
     color: white;
     border-bottom: 3px solid gray;
+    overflow: hidden; /* when resizing, text won't go over border line */
 }
 .title-with-img img {
     filter: blur(1.5px); /* blurs the image */
+    border-radius: 20px;
+    width: 70%; /* responsive image */
+    height: 70%; /* responsive image */
 }
 .centered {
     position: absolute;
