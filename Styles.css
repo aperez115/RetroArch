@@ -25,8 +25,7 @@ li, a {
 footer {
     text-align: center;
     background-color: #3A1078;
-    margin-top: -26.5px; /* makes footer connect with the bottom of Main */
-    position: fixed; bottom: 0; /* makes the footer stay at the bottom of the browser window */
+    margin-top: -28px; /* makes footer connect with the bottom of Main */
 }
 
 
