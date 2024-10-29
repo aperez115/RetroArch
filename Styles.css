@@ -17,25 +17,39 @@ body {
     background-size: cover; /* resizes the bg image to cover the whole site */
     background-repeat: no-repeat; /* makes the bg image not repeat */
     height: 100%;
-    margin: 0; /* used here to make sure that there is no spacing for the top of the header*/
+    margin: 0; /* used here to make sure that there is no spacing above the top of the header*/
+}
+
+/* Trick to make footer stay at bottom of the viewport: */
+body {
+    position: relative;
+}
+  
+body::after {
+    content: '';
+    display: block;
+    height: 100px; /* Set same as footer's height */
+}
+
+footer {
+    text-align: center;
+    background-color: #3A1078;
+    width: 99.9%; /* makes sure to not overlap with right side bar of browser */
+    position: absolute;
+    bottom: 0;
+    height: 100px;
 }
 
 li, a {
     color: white;
 }
 
-footer {
-    text-align: center;
-    background-color: #3A1078;
-    margin-top: -28px;
-}
-
-
 /*--------------------------- Header Section -----------------------------------*/
 header {
     display: flex; /* aligns items next to each other in flex-box format */
     justify-content: flex-end; /* sets items to the right/end side */
     background-color: #3A1078; /* sets the background color of the header */
+    width: 99.9%; /* makes sure to not overlap with right side bar of browser */
 }
 
 .logo {
@@ -67,7 +81,7 @@ header {
 .nav-links li {
     list-style: none; /* gets rid of underline */
     display: inline-block; /* lines up items horizontally next to each other */
-    padding: 0px 20px; /* spcaes out items */
+    padding: 0px 20px; /* spaces out items */
     font-size: 22px;
     border-right: 1px solid white; /* shows right border to see separation better */
 }
