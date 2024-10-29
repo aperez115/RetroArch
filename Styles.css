@@ -84,6 +84,7 @@ header {
     padding: 0px 20px; /* spaces out items */
     font-size: 22px;
     border-right: 1px solid white; /* shows right border to see separation better */
+    margin-bottom: 40px; /* when screen is zoomed in, makes sure the buttons do not overlap with each other */
 }
 
 .nav-links li:last-child {
