@@ -16,6 +16,8 @@ body {
     background-attachment: fixed; /* keeps bg still when scrolling */
     background-size: cover; /* resizes the bg image to cover the whole site */
     background-repeat: no-repeat; /* makes the bg image not repeat */
+    height: 100%;
+    margin: 0; /* used here to make sure that there is no spacing for the top of the header*/
 }
 
 li, a {
@@ -25,7 +27,7 @@ li, a {
 footer {
     text-align: center;
     background-color: #3A1078;
-    margin-top: -28px; /* makes footer connect with the bottom of Main */
+    margin-top: -28px;
 }
 
 
