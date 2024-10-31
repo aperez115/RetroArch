@@ -3,10 +3,10 @@
 }
 
 html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* sets the font and its font backups for browser support */
     line-height: 1.5; /* line spacing */
     font-size: 21px; /* increases the font size from default throughout the whole html */
     scroll-behavior: smooth; /* makes jumping to links a smooth scrool and not in an instant */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* sets the font and its font backups for browser support */
 }
 
 body {
@@ -183,21 +183,13 @@ main h2 {
 .title-with-img {
     position: relative;
     text-align: center;
-    color: white;
     border-bottom: 3px solid gray;
     overflow: hidden; /* when resizing, text won't go over border line */
 }
 .title-with-img img {
-    filter: blur(1.5px); /* blurs the image */
     border-radius: 20px;
     width: 70%; /* responsive image */
     height: 70%; /* responsive image */
-}
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .title-without-img {
