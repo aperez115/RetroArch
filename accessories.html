@@ -5,7 +5,7 @@
     <meta charset="utf-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <link rel="stylesheet" href="Styles.css">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" >
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6RDV38GB0"></script>
     <script>
@@ -15,6 +15,8 @@
 
       gtag('config', 'G-Q6RDV38GB0');
     </script>
+    <!--JavaScript src-->
+    <script src="dropDown.js"></script>
   </head>
 
   <body>
@@ -39,15 +41,18 @@
         <h1>The <br>World <br>of <br>PlayStation <br>Accessories</h1>
       </div>
       <br>
-      <div class="toc"> <!--Table of Contents-->
-        <h2>Table Of Contents:</h2>
-        <ul>
-          <li><h2><a href="#eyetoy">EyeToy</a></h2></li>
-          <li><h2><a href="#psvr">PS VR</a></h2></li>
-          <li><h2><a href="#pscam">PS Camera</a></h2></li>
-        </ul>
+
+      <h2>Table Of Contents</h2>
+      <div class="dropdown"> <!--Table of Contents dropdown-->
+        <button onclick="myFunction()" class="dropbtn">Table of Contents:</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#eyetoy">EyeToy</a>
+          <a href="#psvr">PS VR</a>
+          <a href="#pscam">PS Camera</a>
+        </div>
       </div>
 
+      <br>
       <br>
 
       <section id="eyetoy"> <!--EyeToy Content-->

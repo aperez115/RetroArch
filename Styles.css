@@ -7,6 +7,8 @@ html {
     line-height: 1.5; /* line spacing */
     font-size: 21px; /* increases the font size from default throughout the whole html */
     scroll-behavior: smooth; /* makes jumping to links a smooth scrool and not in an instant */
+    margin: 0; /* resets margin of html */
+    padding: 0; /* resets padding of html */
 }
 
 body {
@@ -16,10 +18,12 @@ body {
     background-attachment: fixed; /* keeps bg still when scrolling */
     background-size: cover; /* resizes the bg image to cover the whole site */
     background-repeat: no-repeat; /* makes the bg image not repeat */
+    background-position: center; /* centers background image */
     height: 100%;
     margin: 0; /* used here to make sure that there is no spacing above the top of the header*/
 }
 
+/* -------------------Trick--------------------------------- */
 /* Trick to make footer stay at bottom of the viewport: */
 body {
     position: relative;
@@ -30,6 +34,7 @@ body::after {
     display: block;
     height: 100px; /* Set same as footer's height */
 }
+/* --------------------------------------------------------- */
 
 footer {
     text-align: center;
@@ -42,6 +47,10 @@ footer {
 
 li, a {
     color: white;
+}
+
+#ps4 ul li {
+    margin-bottom: 20px; /* adds spacing below each list */
 }
 
 /*--------------------------- Header Section -----------------------------------*/
@@ -85,6 +94,7 @@ header {
     font-size: 22px;
     border-right: 1px solid white; /* shows right border to see separation better */
     margin-bottom: 40px; /* when screen is zoomed in, makes sure the buttons do not overlap with each other */
+    margin-top: 5px; /* spacing from the top of the list */
 }
 
 .nav-links li:last-child {
@@ -125,26 +135,71 @@ main h2 {
     text-decoration: underline; /* adds underline to all h2 headings */
 }
 
+.center-heading{ /* will change the alignment of h2 on best games page */
+    text-align: center;
+}
+
+
 /*----------table of contents----------*/
-.toc ul {
-    margin-left: 10px; /* aligns the the entire list more to the right */
-}
-
-.toc ul li, a {
-    color: #3795BD;
-}
-
-.toc a:hover {
-    color:#6caeca /* makes text lighter when hovering over */
-}
-
 #ps1, #ps2, #ps3, #ps4, #ps5, #eyetoy, #psvr, #pscam, #ff7, #gta, #lou, #msp, #gow {
     scroll-margin-top: 30px; /* gives spacing when jumping to that section from anchor links */
 }
 
-.center-heading{ /* will change the alignment of h2 on best games page */
-    text-align: center;
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 25px;
+    font-size: 21px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #074974;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+  }
+
+  .dropbtn, .dropdown-content { /* adds spacing from the left */
+    margin-left: 10px;
 }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 50px;
+    display: block;
+    transition: all 0.3s ease 0s; /* smooth transition when hovering over anchor elements */
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: gray;
+    color: white;
+    font-size: larger;
+}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
 
 
 /*--------------images-----------------*/

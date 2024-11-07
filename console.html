@@ -5,7 +5,7 @@
     <meta charset="utf-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <link rel="stylesheet" href="Styles.css">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" >
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6RDV38GB0"></script>
     <script>
@@ -15,6 +15,8 @@
 
       gtag('config', 'G-Q6RDV38GB0');
     </script>
+    <!--JavaScript src-->
+    <script src="dropDown.js"></script>
   </head>
 
   <body>
@@ -39,17 +41,19 @@
         <h1>Journey <br>of <br>the <br>Consoles</h1>
       </div>
       <br>
-      <div class="toc"> <!--Table of Contents-->
-        <h2>Table Of Contents:</h2>
-        <ul>
-          <li><h2><a href="#ps1">PS1</a></h2></li>
-          <li><h2><a href="#ps2">PS2</a></h2></li>
-          <li><h2><a href="#ps3">PS3</a></h2></li>
-          <li><h2><a href="#ps4">PS4</a></h2></li>
-          <li><h2><a href="#ps5">PS5</a></h2></li>
-        </ul>
-      </div>
       
+      <h2>Table Of Contents</h2>
+      <div class="dropdown"> <!--Table of Contents dropdown-->
+        <button onclick="myFunction()" class="dropbtn">Table of Contents:</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#ps1">PS1</a>
+          <a href="#ps2">PS2</a>
+          <a href="#ps3">PS3</a>
+          <a href="#ps4">PS4</a>
+          <a href="#ps5">PS5</a>
+        </div>
+      </div>
+      <br>
       <br>
 
       <section id="ps1"> <!--PS1 content-->
@@ -211,10 +215,10 @@
           Some of the most popular games this console had to offer were:
         </p>
         <ul>
-          <li><em><strong>The Witcher 3 Wild Hunt</strong></em> and <em><strong>Red Dead Redemption 2</strong></em>, which were two massive open-world titles that pushed the limits of the console's capabilities with their detailed environments and storytelling.</li> <br>
-          <li><em><strong> 4: A Thief's End</strong></em> and <em><strong>The Last of Us Part II</strong></em>, developed by Naughty Dog, set new standards for narrative-driven gameplay and graphical fidelity, becoming benchmarks for cinematic experiences in gaming.</li> <br>
-          <li><em><strong>God of War (2018)</strong></em> rebooted the classic franchise with a more mature story and stunning visuals, while Horizon Zero Dawn introduced players to a unique, post-apocalyptic world filled with robotic creatures.</li> <br>
-          <li><em><strong>Spider-Man (2018)</strong></em> captured the feeling of superhero action with fluid web-swinging mechanics and a well-crafted story.</li> <br>
+          <li><em><strong>The Witcher 3 Wild Hunt</strong></em> and <em><strong>Red Dead Redemption 2</strong></em>, which were two massive open-world titles that pushed the limits of the console's capabilities with their detailed environments and storytelling.</li>
+          <li><em><strong> 4: A Thief's End</strong></em> and <em><strong>The Last of Us Part II</strong></em>, developed by Naughty Dog, set new standards for narrative-driven gameplay and graphical fidelity, becoming benchmarks for cinematic experiences in gaming.</li>
+          <li><em><strong>God of War (2018)</strong></em> rebooted the classic franchise with a more mature story and stunning visuals, while Horizon Zero Dawn introduced players to a unique, post-apocalyptic world filled with robotic creatures.</li>
+          <li><em><strong>Spider-Man (2018)</strong></em> captured the feeling of superhero action with fluid web-swinging mechanics and a well-crafted story.</li>
         </ul>
         <!--CSS Center image-->
         <img class="img-center" src="images/marvel'sSpider-Man.jpg" alt="Spider-Man" width="474" height="266">
