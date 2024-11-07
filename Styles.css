@@ -145,11 +145,15 @@ main h2 {
     scroll-margin-top: 30px; /* gives spacing when jumping to that section from anchor links */
 }
 
+#toc {
+    color: #5cc0f9;
+}
+
 /* Dropdown Button */
 .dropbtn {
     background-color: #0074D9;
     color: #FFFFFF;
-    padding: 25px;
+    padding: 25px 35px;
     font-size: 21px;
     font-weight: bold;
     border: none;
